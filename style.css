@@ -1,0 +1,44 @@
+:root {
+  --color-dark: #000000;
+  --color-white: #ffffff;
+  --primary-color: #4a0d29c3;
+  --secondary-color: var(rgba(89, 124, 89, 0.55));
+  --tertiary-color: var(rgba(62, 29, 62, 0.653));
+  --box-shadow: var(5px 5px 10px 3px rgba(35, 7, 7, 0.543));
+}
+
+.wrapper {
+  height: 100vh;
+  padding: 10px;
+  background-color: rgb(205, 161, 103);
+}
+.container {
+  background-color: var(--primary-color);
+  height: 95vh;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+.title p {
+  border-left: 2px solid red;
+  padding: 5px;
+}
+.navBar {
+  height: 150px;
+  width: auto;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  display: flex;
+  color: wheat;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
