@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Jersey+25+Charted&family=Noto+Serif+Khitan+Small+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
+    <!-- fontawesome cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -14,31 +20,60 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <!-- darkmode -->
+
+ 
+    <input type="checkbox" id="darkmode">
     <div class="wrapper">
-      <div class="container">
+
+
+      
         <!-- navbar -->
-        <section>
-          <div class="navBar">
-            <div class="title"><h2>Kabindra</h2>
-        
-        <p>Full Stack Software Developer</p>
+<section>
+  <div class="navBar">
+  
+    <div class="title">
+      <h2 class="">Kabindra</h2>
+     <p class="roboto-thin-italic">Full Stack Software Engineer</p>
     </div>
-            <div class="navBarContent">
-                <label for="">Home</label>
-                <label for="">Banner</label>
-                <label for="">Skills</label>
-                <label for="">Projects</label>
-                <label for="">Footer</label>
-                </div>
-            </div>
-          </div>
-        </section>
+
+    <div class="menu ">
+      <ul class="navigation">
+        <li><a href="">Home</a></li>
+        <li><a href="">Skills</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+  
+ 
+  </div>
+</section>
+
+
+        <label for="darkmode"><i class="fa-solid fa-circle-half-stroke"></i></label> 
+
+
+
+
         <!-- hero -->
         <section>
-          <div class="hero">
+          <div class="hero container">
+            <div class="left">
+
+              <div>
+                Hi I'm <span>Kabindra Ranabhat,</span>
+              </div>
+             
+              <div><h2>Full stack software Engineer</h2></div>
+              <p> I love to code,learn new technologies and develop awesome applications</p>
+            </div>
+            <div></div>
            <div class="img">
-            
+            <img src="./assets/CV3-removebg-preview.png" alt="">
            </div>
+
           </div>
         </section>
         <!-- banner -->
@@ -59,6 +94,11 @@
         <!-- aboutMe -->
         <section>
           <div class="aboutMe"></div>
+        </section>
+
+        <!-- contact me -->
+        <section>
+          <div class="contact"></div>
         </section>
 
         <!-- footer -->

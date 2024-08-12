@@ -3,22 +3,117 @@
   --color-white: #ffffff;
   --primary-color: #4a0d29c3;
   --secondary-color: var(rgba(89, 124, 89, 0.55));
-  --tertiary-color: var(rgba(62, 29, 62, 0.653));
+  --body-bg: var(rgba(62, 29, 62, 0.653));
+  --hover-color: var(rgba(190, 10, 25, 0.653));
+  --dark-bg: var(--color-dark);
+
   --box-shadow: var(5px 5px 10px 3px rgba(35, 7, 7, 0.543));
 }
 
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
 .wrapper {
-  height: 100vh;
-  padding: 10px;
-  background-color: rgb(205, 161, 103);
-}
-.container {
+  min-height: 100vh;
+  padding: 5px 5px 0 0;
   background-color: var(--primary-color);
-  height: 95vh;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 5px;
 }
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* fonts */
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
 .title {
   display: flex;
   flex-wrap: wrap;
@@ -30,15 +125,61 @@
   padding: 5px;
 }
 .navBar {
-  height: 150px;
-  width: auto;
+  box-shadow: 5px 5px 10px 3px rgba(128, 128, 128, 0.438);
   background-color: var(--primary-color);
-  border-radius: 5px;
-  display: flex;
-  color: wheat;
-  flex-wrap: wrap;
-
-  justify-content: space-between;
-  align-items: center;
   padding: 10px;
+  position: sticky;
+}
+
+.navBar {
+  min-height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 5px;
+  color: white;
+  border-radius: 10px;
+}
+
+[for="darkmode"] {
+  position: fixed;
+  top: 13rem;
+  left: 2rem;
+}
+
+.navigation {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  font-weight: bolder;
+}
+.navigation li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation li:hover {
+  transition: all 0.1;
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.navigation li:hover a {
+  color: red;
+}
+[for="darkmode"]:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+/* applying dark mode feature */
+#darkmode:checked + .wrapper {
+  --primary-color: var(--dark-bg);
+  color: white;
+}
+#darkmode {
+  display: none;
 }
