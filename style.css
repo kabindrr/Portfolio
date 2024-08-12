@@ -183,3 +183,20 @@ body {
 #darkmode {
   display: none;
 }
+
+.hero {
+  background-color: var(--primary-color);
+  margin-top: 40px;
+  max-height: 60vh;
+  display: flex;
+  padding: 2rem;
+}
+
+.hero .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+}
