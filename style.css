@@ -195,7 +195,7 @@ body {
 .hero {
   background-color: var(--primary-color);
   margin-top: 50px;
-  max-height: 60vh;
+  max-height: 600px;
   display: flex;
   gap: 10px;
   box-shadow: 5px 5px 10px 3px rgba(128, 128, 128, 0.493);
@@ -488,6 +488,8 @@ body {
   margin: 7px;
 }
 .goUp {
+  width: 80px;
+  height: 80px;
   font-size: 3rem;
   background-color: rgba(82, 5, 5, 0.678);
   padding: 0.2rem;
@@ -495,6 +497,9 @@ body {
   position: fixed;
   right: 20px;
   bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #barmenu {
@@ -531,15 +536,30 @@ body {
   }
   .hero {
     display: grid;
-    grid-template-areas: "left" "right";
+    grid-template-areas:
+      "right"
+      "left";
   }
   .hero .right {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    grid-area: right;
+    padding-left: 5rem;
+  }
+  .hero .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero .left {
+    grid-area: left;
+    padding-left: 5rem;
   }
   .hero .right img {
-    width: 50%;
+    width: 60%;
   }
   .banner {
     flex-direction: column;
