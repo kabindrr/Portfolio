@@ -200,6 +200,7 @@ body {
   gap: 10px;
   box-shadow: 5px 5px 10px 3px rgba(128, 128, 128, 0.493);
   padding-top: 2rem;
+  margin-top: 12rem;
 }
 
 .hero .left {
@@ -546,9 +547,5 @@ body {
   }
   .divider {
     display: none;
-  }
-  .project-container {
-    display: flex;
-    align-items: start;
   }
 }
