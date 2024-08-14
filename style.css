@@ -118,6 +118,10 @@ body {
   font-style: italic;
 }
 
+.MainNavBar {
+  position: sticky;
+  top: 0;
+}
 .header {
   display: flex;
 
@@ -136,7 +140,6 @@ body {
   padding: 10px;
   position: sticky;
   top: 0;
-  z-index: 1000;
 }
 
 .navBar {
