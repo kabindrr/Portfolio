@@ -510,8 +510,11 @@ body {
 }
 
 @media (max-width: 768px) {
-  #barmenu {
+  .menu {
     display: none;
+  }
+  #barmenu:checked + .menu {
+    left: 0;
   }
 
   [for="barmenu"] {
