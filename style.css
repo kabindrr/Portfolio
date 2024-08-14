@@ -568,10 +568,24 @@ body {
     width: 60%;
   }
   .banner {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    gap: 1rem;
+    grid-auto-flow: row;
+    justify-items: center;
     align-items: center;
-    justify-content: center;
+  }
+  .banner .contact {
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  .banner img {
+    width: 100%;
+  }
+  .banner p {
+    font-size: 0.9rem;
   }
 
   .divider {
