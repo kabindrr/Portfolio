@@ -510,6 +510,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  #barmenu {
+    display: none;
+  }
+
   [for="barmenu"] {
     cursor: pointer;
     display: block;
